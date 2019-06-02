@@ -1,0 +1,35 @@
+﻿@model web.Models.EmployeeModel
+
+@{
+    ViewData["Title"] = "SalaryView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SalaryView</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Salary
+        </th>
+        <th>
+            Hourly
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            @Model.salary
+        </td>
+        <td>
+            @Model.hourly
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
